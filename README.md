@@ -1,1 +1,1 @@
-https://github.com/RuslanBeliakov/Ono_tebe_nado_fd
+https://github.com/RuslanBeliakov/ono-tebe-nado-fd.git
