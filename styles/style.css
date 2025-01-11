@@ -10,7 +10,7 @@
     justify-self: center;
 }
 
-.menu_links {
+.header_menu_links {
     display: flex;
     gap: 32px;
     list-style-type: circle;
@@ -24,40 +24,39 @@
     text-decoration: underline;
 }
 
-.list a:link,
-.list a:visited {
-    text-decoration: none;
-}
-
-.active {
-    text-decoration: none; 
-}
-
-.list a:hover {
+.list a:link, menu a:visited, menu a:hover {
+    color: black;
      text-decoration: underline;
+     border-bottom: 1px solid black;
 }
 
-.list_first {
+.header__links-list-item_no-bullit, .header__links-list-item_no-bullit a:link {
     list-style-type: none;
+    border-bottom: none;
 }
-.header__links-list-item_no-bullit {
-    list-style-type: none;
+.header__link_active {
     text-decoration: none;
 }
-
 .header_logo {
     width: 148px;
     height: 105px;
 }
 
-.header-address {
+.address {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    list-style-type: none;
+}
+
+.address-item {
     padding-left: 185px;
     font-size: 18px;
     line-height: 24.3px;
     letter-spacing: 0.18px;
-    font-family: "Raleway", sans-serif;
-    font-style: normal;
-    list-style-type: none;
+}
+
+.address-item .address-item a:link {
+    text-decoration: none;
 }
 
 .cover {
@@ -259,25 +258,30 @@
     padding-top: 100px;
 }
 
-.title_about {
-    color: black;
+.about__auction{
+    padding: 0px 0px 0px 25px;   
+}
+
+.about__title {
+    color: #000;
+    font-family: Raleway, sans-serif;
     font-size: 40px;
+    font-style: normal;
     font-weight: 700;
-    line-height: 46.96px;
+    line-height: normal;
     text-transform: uppercase;
+    padding-bottom:100px;
+    padding-top:100px;
 }
 
-.about_text {
-    align-self: flex-start;
-    font-family: "Raleway", sans-serif;
-    color: black;
+.about__text {
+    color: #000;
+    font-family: Raleway, sans-serif;
     font-size: 20px;
+    font-style: normal;
     font-weight: 400;
-    line-height: 24px;
-}
-
-.text__about {
-    padding-top: 76px;
+    line-height: normal;
+    padding-bottom:25px;
 }
 
 .footer {
@@ -286,12 +290,6 @@
     padding: 180px 50px 88px;
     gap: 140px;
     align-items: flex-start;
-}
-
-.footer_address {
-    font-style: normal;
-    padding-left: 0;
-    list-style-type: none; 
 }
 
 .footer_menu {
@@ -310,8 +308,9 @@
     font-weight: 400;
 }
 
-.footer_first, .footer_first a:link {
+.footer__link_active, .footer__link_active a:link {
     text-decoration: none;
+    border-bottom: none;
 }
 
 .images_footer {
